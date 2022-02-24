@@ -4,7 +4,7 @@
 import time
 import os
 
-dir = "/home/pi/pixels/"
+dir = "/home/ubuntu/pixels/"
 
 for i in range(9):
     print(i)
