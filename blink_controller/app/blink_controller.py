@@ -20,11 +20,11 @@ class Main(blinkstick.BlinkStickPro):
             for i in range(0, 8):
                 if os.path.isfile(dir + str(i)):
                     time.sleep(0.003)
-                    self.bstick.set_color(0, i, red, green, blue)
+                    self.bstick.set_color(0, i, int(red), int(green), int(blue))
                     no_pixels += 1
                 else:
                     time.sleep(0.003)
-                    self.bstick.set_color(0, i, blue, green, blue)
+                    self.bstick.set_color(0, i, 0, 0, 0)
                     no_pixels -= 1
 
             time.sleep(0.2)

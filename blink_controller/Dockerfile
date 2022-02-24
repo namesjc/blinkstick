@@ -14,6 +14,6 @@ COPY requirements.txt .
 
 RUN pip install --no-cache-dir -r requirements.txt  -i https://mirrors.aliyun.com/pypi/simple
 
-COPY /app .
+COPY app .
 
-CMD [ "python", "./app/blink_controller.py" ]
+CMD [ "python", "blink_controller.py" ]

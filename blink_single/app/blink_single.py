@@ -14,6 +14,7 @@ for i in range(9):
     elif not os.path.isfile(dir + str(i)):          # If the file is not there, create it, so the pixel controller will know to turn on the pixel
         print("Pixel ",i," available, activating!")
         f = open(dir + str(i), "a")
+        time.sleep(2)
         break
 
-time.sleep(2)
+time.sleep(int(os.environ["SLEEP"]))
